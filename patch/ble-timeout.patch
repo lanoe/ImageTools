@@ -1,0 +1,13 @@
+diff --git a/include/net/bluetooth/hci.h b/include/net/bluetooth/hci.h
+index 99aa5e5..1e2f178 100644
+--- a/include/net/bluetooth/hci.h
++++ b/include/net/bluetooth/hci.h
+@@ -273,7 +273,7 @@ enum {
+ #define HCI_AUTO_OFF_TIMEOUT	msecs_to_jiffies(2000)	/* 2 seconds */
+ #define HCI_POWER_OFF_TIMEOUT	msecs_to_jiffies(5000)	/* 5 seconds */
+ #define HCI_LE_CONN_TIMEOUT	msecs_to_jiffies(20000)	/* 20 seconds */
+-#define HCI_LE_AUTOCONN_TIMEOUT	msecs_to_jiffies(2000)	/* 2 seconds */
++#define HCI_LE_AUTOCONN_TIMEOUT	msecs_to_jiffies(10240)	/* The BLE spec allows broadcast intervals up to 10.24 seconds. */
+ 
+ /* HCI data types */
+ #define HCI_COMMAND_PKT		0x01

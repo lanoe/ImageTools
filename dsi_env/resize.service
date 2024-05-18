@@ -1,0 +1,9 @@
+[Unit]
+Description=Service to resize SD card
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /root/resize
+
+[Install]
+WantedBy=multi-user.target

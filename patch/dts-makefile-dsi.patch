@@ -1,0 +1,20 @@
+diff --git a/arch/arm/boot/dts/Makefile b/arch/arm/boot/dts/Makefile
+index 2151478..85fbce9 100644
+--- a/arch/arm/boot/dts/Makefile
++++ b/arch/arm/boot/dts/Makefile
+@@ -355,6 +355,7 @@ dtb-$(CONFIG_SOC_IMX6Q) += \
+ 	imx6dl-hummingboard2-emmc.dtb \
+ 	imx6dl-hummingboard2-emmc-som-v15.dtb \
+ 	imx6dl-hummingboard2-som-v15.dtb \
++	imx6dl-bridge-som-v15.dtb \
+ 	imx6dl-hl.dtb \
+ 	imx6dl-hp.dtb \
+ 	imx6dl-lshore.dtb \
+@@ -453,6 +454,7 @@ dtb-$(CONFIG_SOC_IMX6Q) += \
+ 	imx6q-hummingboard2-emmc.dtb \
+ 	imx6q-hummingboard2-emmc-som-v15.dtb \
+ 	imx6q-hummingboard2-som-v15.dtb \
++	imx6q-bridge-som-v15.dtb \
+ 	imx6q-icore-rqs.dtb \
+ 	imx6q-insp.dtb \
+ 	imx6q-ioc.dtb \

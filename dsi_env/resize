@@ -1,0 +1,12 @@
+# script to resize SD card 'tool'
+if [ -f /root/.resize ]; then
+  status=$(cat /root/.resize)
+  if [ "$status" = "" ]; then
+    resize2fs /dev/mmcblk0p1
+    echo "done" > /root/.resize
+  fi
+else
+  echo -e "d\nn\np\np\n1\n8192\n\nN\nw\n" | fdisk /dev/mmcblk0
+  touch /root/.resize
+  shutdown -r now
+fi
